@@ -22,15 +22,16 @@ public class CakeOrder extends Bakery{
         System.out.print("How many piece: ");
         int piece = scanner.nextInt();
 
-        CupCake order2 = new CupCake(piece,flavor,65);
+        CupCake order2 = new CupCake(piece,flavor_cupcake,65);
 
         System.out.println(order2);
 
         System.out.println("\nChocobanana's Details:");
         System.out.print("Enter a flavor : ");
         String flavor_chocobanana = scanner.next();
-        System.out.print("Topping: ");
-        String topping = scanner.next();
+        scanner.nextLine();
+        System.out.print("Topping (if you don't want topping just enter): ");
+        String topping = scanner.nextLine();
         System.out.print("How many pieces: ");
         int quantity = scanner.nextInt();
 

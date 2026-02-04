@@ -1,7 +1,8 @@
 public class Bakery {
-    private  String flavor;
+    private String flavor;
     private double untilePrice;
-    private  int packingCost = 5;
+    private int packingCost = 5;
+
 
     public Bakery(String flavor,double untilePrice){
         this.flavor = flavor;
@@ -24,6 +25,9 @@ public class Bakery {
         return  this.untilePrice + this.packingCost;
     }
 
+    public void setUntilePrice(double price){
+        this.untilePrice = price;
+    }
 
     @Override
     public String toString() {

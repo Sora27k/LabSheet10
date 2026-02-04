@@ -30,7 +30,7 @@ public class CupCake extends Bakery{
 
     @Override
     public  double calculateTotalPrice(){
-        return getUntilePrice() * this.piece * (getPackingCost() + getBagNumber()*0.5);
+        return (getUntilePrice() * this.piece) + (getPackingCost() + getBagNumber()*0.5);
     }
 
 
